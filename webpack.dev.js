@@ -59,14 +59,6 @@ module.exports = (env) => {
             from: paths.images,
             to: 'images',
           },
-          {
-            from: paths.docs,
-            to: 'documents',
-          },
-          {
-            from: paths.libs,
-            to: 'js',
-          },
         ],
       }),
     ].concat(htmlPlugins),
