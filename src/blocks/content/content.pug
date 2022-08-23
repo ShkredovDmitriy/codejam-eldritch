@@ -1,4 +1,6 @@
 section.content
+  .background
+
   .ansient
     ul.ancient__list
       li.ancient__item
@@ -13,15 +15,37 @@ section.content
       li.ancient__item
         button.button.button__ancient#shubNiggurath
           img(src="./images/ShubNiggurath.png", alt="").ancient__card
+
   .game
     ul.levels__list
       ul.levels__item
-        button.button.level__button#levelVeryEasy Very Easy
+        button.button.level__button.hidden#levelVeryEasy Very Easy
       ul.levels__item
-        button.button.level__button#levelEasy Easy
+        button.button.level__button.hidden#levelEasy Easy
       ul.levels__item
-        button.button.level__button#levelNormal Normal
+        button.button.level__button.hidden#levelNormal Normal
       ul.levels__item
-        button.button.level__button#levelHard Hard
+        button.button.level__button.hidden#levelHard Hard
       ul.levels__item
-        button.button.level__button#levelVeryHard Very Hard
+        button.button.level__button.hidden#levelVeryHard Very Hard
+
+    .shuffle
+      button.button.level__button.hidden#shiffleCards Shiffle
+
+    .table
+      .table__row#step1Row
+        .table__cell Step 1
+        .table__cell.table__cell--green#step1Green
+        .table__cell.table__cell--brown#step1Brown
+        .table__cell.table__cell--blue#step1Blue
+      .table__row#step2Row
+        .table__cell Step 2
+        .table__cell.table__cell--green#step2Green
+        .table__cell.table__cell--brown#step2Brown
+        .table__cell.table__cell--blue#step2Blue
+      .table__row#step3Row
+        .table__cell Step 3
+        .table__cell.table__cell--green#step3Green
+        .table__cell.table__cell--brown#step3Brown
+        .table__cell.table__cell--blue#step3Blue
+
