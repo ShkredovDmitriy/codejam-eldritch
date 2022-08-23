@@ -20,7 +20,6 @@
 }
 
 // ANCIENT
-
 .ansient {
   position: relative;
   flex-shrink: 0;
@@ -45,7 +44,7 @@
   transform: translateY(-2rem);
   opacity: 0;
   cursor: pointer;
-  transition: opacity 0.3s, transform 0.5s, box-shadow 0.3s;
+  transition: opacity 0.4s, transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 0.3125rem 1.75rem rgba(255, 255, 255, 0.3);
 
   &.visible {
@@ -165,4 +164,23 @@
 .table__cell--blue {
   width: 1.875rem;
   background-color: blue;
+}
+
+// CARD
+.card-set {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  height: 13.875rem;
+
+  img {
+    display: block;
+    margin: 0.5rem;
+    width: 9.375rem;
+    height: auto;
+  }
+}
+
+.card-back {
+  cursor: pointer;
 }
