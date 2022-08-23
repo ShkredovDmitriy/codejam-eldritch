@@ -3,12 +3,15 @@
   top: 0;
   left: 0;
   display: none;
-  justify-content: center;align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: $color-black;
   opacity: 0;
   transition: opacity 0.3s;
+  z-index: 100;
 
   &.visible {
     opacity: 1;
@@ -19,7 +22,15 @@
   }
 }
 
+.preloader__message {
+  font-size: 2.8125rem;
+  font-weight: 700;
+  color: $color-red;
+  margin-bottom: 2rem;
+}
+
 .preloader__counter {
   font-size: 5rem;
+  font-weight: 700;
   color: $color-red;
 }
