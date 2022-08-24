@@ -14,6 +14,12 @@
   }
 }
 
+@mixin media-netbook {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
 @mixin media-tablet {
   @media screen and (max-width: 1000px) {
     @content;
@@ -21,7 +27,7 @@
 }
 
 @mixin media-mobile {
-  @media (max-width: 570px) {
+  @media (max-width: 480px) {
     @content;
   }
 }

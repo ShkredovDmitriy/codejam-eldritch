@@ -1,0 +1,35 @@
+.ancient__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.ancient__item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.ancient__card {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.625rem;
+}
+
+@include media-netbook {
+  .ancient__list {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    max-width: 31.25rem;
+  }
+
+  .ancient__item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    &:nth-child(n + 3) {
+      margin-top: 1rem;
+    }
+  }
+}

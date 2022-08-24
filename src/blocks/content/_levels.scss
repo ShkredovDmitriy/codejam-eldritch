@@ -1,0 +1,31 @@
+.levels__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.levels__item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@include media-netbook {
+
+  .levels__list {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    max-width: 31.25rem;
+  }
+
+
+  .levels__item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    &:nth-child(n + 3) {
+      margin-top: 1rem;
+    }
+  }
+}

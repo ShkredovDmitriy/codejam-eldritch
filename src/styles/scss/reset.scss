@@ -43,8 +43,10 @@ a {
   text-decoration: none;
 }
 
-.svg-sprite {
-  width: 0;
-  height: 0;
-  overflow: hidden;
+@include media-mobile {
+
+  html,
+  body {
+    font-size: calc(100vw / 480 * 16)
+  }
 }

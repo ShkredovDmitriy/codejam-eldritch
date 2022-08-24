@@ -1,0 +1,53 @@
+.table {
+  margin-top: 2rem;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s, transform 0.3s, visibility 0.3s;
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+
+.table__row {
+  display: flex;
+}
+
+.table__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+  height: 1.5rem;
+  padding-top: 0.125rem;
+  border-radius: 0.1875rem;
+  font-size: 1rem;
+  line-height: 1;
+  color: $color-white;
+  opacity: 0.7;
+}
+
+.table__cell--green {
+  width: 1.875rem;
+  background-color: green;
+}
+
+.table__cell--brown {
+  width: 1.875rem;
+  background-color: brown;
+}
+
+.table__cell--blue {
+  width: 1.875rem;
+  background-color: blue;
+}
+
+@include media-netbook {
+
+  .table {
+    margin-top: 1.5rem;
+  }
+}
