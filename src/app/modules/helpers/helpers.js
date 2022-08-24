@@ -24,14 +24,14 @@ export const fillTable = (set1, set2, set3) => {
 
 export const loading = () => {
   let load = 0;
-  let step = Math.ceil(100 / config.images.length);
+  let step = 105 / config.images.length;
   return new Promise((resolve, reject) => {
     config.images.map(src => {
       const img = new Image();
       img.addEventListener('load', () => {
         setTimeout(()=> {
           load += step;
-          if(load < 100) qs('.preloader__counter').textContent = load + '%';
+          if(load < 100) qs('.preloader__counter').textContent = Math.floor(load) + '%';
           if(load >= 100) {
             qs('.preloader__counter').textContent = '100%'
             setTimeout(()=> qs('.preloader').classList.remove('visible'), 1000)
