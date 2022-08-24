@@ -97,6 +97,9 @@ const config = {
   images: [
     // BACKGROUND
     'background-desktop.jpg',
+    'background-main.png',
+    'lighting-left.svg',
+    'lighting-right.svg',
     // ANTIENTS
     'Azathoth.png',
     'Cthulthu.png',
