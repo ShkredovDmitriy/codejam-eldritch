@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru-RU">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Eldritch</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon/favicon-48x48.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="ds-webpack5-starter">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ds-webpack5-starter">
+    <link rel="icon" type="image/png" sizes="228x228" href="favicon/coast-228x228.png">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <link rel="yandex-tableau-widget" href="favicon/yandex-browser-manifest.json">
+    <script defer="defer" src="js/main.min.js?1e9040daa4338482cde5"></script>
+    <link href="./css/main.min.css?1e9040daa4338482cde5" rel="stylesheet">
+  </head>
+
+  <body class="index-page">
+    <section class="content">
+      <div class="background"></div>
+      <section class="contaiter" id="containerAncient">
+        <div class="title title--h2">Step 1 - Select Ancient Set</div>
+        <ul class="ancient__list">
+          <li class="ancient__item"><button class="button button--ancient" id="azathoth"><img class="ancient__card" src="./images/Azathoth.png" alt=""></button></li>
+          <li class="ancient__item"><button class="button button--ancient" id="cthulthu"><img class="ancient__card" src="./images/Cthulthu.png" alt=""></button></li>
+          <li class="ancient__item"><button class="button button--ancient" id="iogSothoth"><img class="ancient__card" src="./images/IogSothoth.png" alt=""></button></li>
+          <li class="ancient__item"><button class="button button--ancient" id="shubNiggurath"><img class="ancient__card" src="./images/ShubNiggurath.png" alt=""></button></li>
+        </ul>
+      </section>
+      <section class="contaiter" id="containerLevel">
+        <div class="title title--h2">Step 2 - Select Game Difficulty</div>
+        <ul class="levels__list">
+          <ul class="levels__item"><button class="button button--primary button--level hidden" id="levelVeryEasy">Very Easy</button></ul>
+          <ul class="levels__item"><button class="button button--primary button--level hidden" id="levelEasy">Easy</button></ul>
+          <ul class="levels__item"><button class="button button--primary button--level hidden" id="levelNormal">Normal</button></ul>
+          <ul class="levels__item"><button class="button button--primary button--level hidden" id="levelHard">Hard</button></ul>
+          <ul class="levels__item"><button class="button button--primary button--level hidden" id="levelVeryHard">Very Hard</button></ul>
+        </ul>
+      </section>
+      <section class="contaiter" id="containerShuffle">
+        <div class="title title--h2">Step 3 - Shuffle Cards Well</div><button class="button button--primary button--shuffle hidden" id="buttonShuffle">Shiffle</button>
+      </section>
+      <section class="contaiter" id="containerCards">
+        <div class="title title--h2">Step 4 - Destroy Your Enemies</div>
+        <div class="table hidden" id="tableStat">
+          <div class="table__row" id="step1Row">
+            <div class="table__cell">Round 1</div>
+            <div class="table__cell table__cell--green" id="step1Green"></div>
+            <div class="table__cell table__cell--brown" id="step1Brown"></div>
+            <div class="table__cell table__cell--blue" id="step1Blue"></div>
+          </div>
+          <div class="table__row" id="step2Row">
+            <div class="table__cell">Round 2</div>
+            <div class="table__cell table__cell--green" id="step2Green"></div>
+            <div class="table__cell table__cell--brown" id="step2Brown"></div>
+            <div class="table__cell table__cell--blue" id="step2Blue"></div>
+          </div>
+          <div class="table__row" id="step3Row">
+            <div class="table__cell">Round 3</div>
+            <div class="table__cell table__cell--green" id="step3Green"></div>
+            <div class="table__cell table__cell--brown" id="step3Brown"></div>
+            <div class="table__cell table__cell--blue" id="step3Blue"></div>
+          </div>
+        </div>
+        <div class="card-set hidden" id="setForGame"></div><button class="button button--primary button--play-again hidden" id="buttonPlayAgain">Play Again</button>
+      </section>
+    </section>
+    <div class="preloader visible block">
+      <div class="preloader__message">Horror Is Coming...</div>
+      <div class="preloader__counter">0%</div>
+    </div>
+  </body>
+
+</html>
